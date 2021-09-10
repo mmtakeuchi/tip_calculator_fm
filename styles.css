@@ -73,6 +73,43 @@ input {
   transform: translateY(-50%);
 }
 
+.tipButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tipButtons button {
+  width: 40%;
+  margin: 0.5em;
+  padding: 0.75em 0.5em;
+  font-weight: 700;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background: hsl(183, 100%, 15%);
+  color: hsl(185, 41%, 84%);
+}
+
+.tipButtons input {
+  width: 43%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  color: hsl(183, 100%, 15%);
+}
+
+.tipButtons input:focus {
+  outline: none;
+  border: 3px solid hsl(172, 67%, 45%);
+}
+
+.tipButtons button:focus {
+  background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
 .total {
   background: hsl(183, 100%, 15%);
   margin: 1em 0;
