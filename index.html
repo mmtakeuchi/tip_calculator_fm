@@ -11,13 +11,54 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Space+Mono"
+    />
     <link rel="stylesheet" href="./styles.css" />
 
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
   <body>
-    Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
-    person Total / person Reset
+    <div class="container">
+      <img src="./images/logo.svg" alt="logo" class="logo" />
+
+      <div class="calculator">
+        <div class="bill">
+          <p>Bill</p>
+          <span class="spanInput billInput"><input type="text"></span>
+        </div>
+
+        <div class="select">
+          <p>Select Tip %</p>
+          <div class="tipButtons">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <button>Custom</button>
+          </div>
+        </div>
+
+        <div class="numPeople">
+          <p>Number of People</p>
+          <span class="spanInput peopleInput"><input type="text"></span>
+        </div>
+
+        <div class="total">
+          <div class="amount">
+            <span>Tip Amount</br>/ person</span>
+            <span class="result">68</span>
+          </div>
+          <div class="amount">
+            <span>Total</br>/ person</span>
+            <span class="result">43</span>
+          </div>
+          <button type="button" class="resetBtn">Reset</button>
+        </div>      
+      </div>
+    </div>
 
     <div class="attribution">
       Challenge by
