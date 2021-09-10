@@ -23,23 +23,16 @@ body {
   background: hsl(0, 0%, 100%);
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  height: 90%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   text-align: left;
   padding: 1em 1.5em;
 }
 
-/* .inputBill {
-  border: 2px inset #ccc;
-  font-size: 30px;
+p {
+  color: hsl(186, 14%, 43%);
 }
-
-input {
-  text-align: right;
-  font-size: 24px;
-  border: 0;
-} */
 
 .spanInput {
   display: inline-block;
@@ -47,12 +40,18 @@ input {
 }
 
 .spanInput input {
-  border: 2px solid #c9c9c9;
+  border: none;
+  background: hsl(189, 41%, 97%);
   box-shadow: none;
   font-size: 24px;
   height: 42px;
   padding-left: 20px;
   text-align: right;
+}
+
+.spanInput input:focus {
+  outline: none;
+  border: 2px solid hsl(183, 100%, 15%);
 }
 
 .billInput::before {
@@ -112,30 +111,45 @@ input {
 
 .total {
   background: hsl(183, 100%, 15%);
-  margin: 1em 0;
-  display: flex;
-  flex-direction: column;
+  margin: 1.5em 0 1em 0;
+  border-radius: 10px;
 }
 
 .amount {
-  width: 100%;
+  display: flex;
   margin: 1em 0.5em;
   color: hsl(184, 14%, 56%);
 }
 
+.amountTitle {
+  flex: 2;
+}
+
 .result {
-  float: right;
+  flex: 1;
+  text-align: right;
+}
+
+.totalTitle {
+  color: hsl(189, 41%, 97%);
 }
 
 .resetBtn {
-  width: 100%;
-  margin: 1em 0;
+  display: block;
+  margin: 1em auto;
+  width: 80%;
+  border: none;
+  border-radius: 10px;
   background: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+  font-size: 1.15em;
+  padding: 0.5em 1em;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  top: 0;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
